@@ -1,0 +1,28 @@
+.loader {
+  background: var(--green);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  flex-direction: column;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  top: 0;
+  z-index: 100;
+
+  div {
+    margin-top: 10px;
+  }
+
+  &.loaded {
+    opacity: 0;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

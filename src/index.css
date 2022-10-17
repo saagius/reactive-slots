@@ -1,0 +1,16 @@
+:root {
+  --green: #8dc63f;
+  --dark: #373737;
+  --cream: #fcfcfc;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  background: var(--cream);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

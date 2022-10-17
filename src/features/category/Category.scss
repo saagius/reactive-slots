@@ -1,0 +1,90 @@
+.app-categories {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 60px;
+
+  nav.categories {
+    height: 50px;
+    align-items: center;
+    display: flex;
+
+    ul.categories-menu {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+
+      li {
+        text-transform: capitalize;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+        background: var(--dark);
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        height: 100%;
+
+        &:hover:not(.selected) {
+          background: var(--cream);
+
+          a {
+            color: var(--green);
+          }
+        }
+
+        &.selected {
+          background: var(--green);
+          cursor: default;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          width: 100%;
+          text-align: center;
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .app-categories {
+    top: 10px;
+    right: 10px;
+    width: auto;
+
+    button > svg {
+      fill: var(--green);
+    }
+  }
+}
+
+.MuiMenu-list {
+  background: var(--dark);
+  color: var(--cream);
+
+  a {
+    &:hover:not(.Mui-selected) {
+      background: var(--cream);
+      color: var(--green);
+    }
+
+    &.Mui-selected {
+      background: var(--green);
+      color: var(--cream);
+
+      &:hover {
+        background: var(--green);
+        color: var(--cream);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.app-header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  height: 60px;
+  background: var(--dark);
+  display: flex;
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin-left: 10px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .title {
+      margin-left: 10px;
+      font-size: 20px;
+      color: var(--green);
+    }
+  }
+}
+
+.mobile {
+  .title {
+    display: none;
+  }
+}
